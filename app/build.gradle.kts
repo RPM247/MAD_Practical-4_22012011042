@@ -6,7 +6,6 @@ plugins {
 android {
     namespace = "com.rpm24.mad_practical_4_22012011042"
     compileSdk = 34
-
     defaultConfig {
         applicationId = "com.rpm24.mad_practical_4_22012011042"
         minSdk = 24
@@ -15,6 +14,10 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures{
+        viewBinding=true
     }
 
     buildTypes {
