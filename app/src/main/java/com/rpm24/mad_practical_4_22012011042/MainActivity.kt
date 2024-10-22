@@ -1,3 +1,4 @@
+
 package com.rpm24.mad_practical_4_22012011042
 
 import android.annotation.SuppressLint
@@ -112,12 +113,12 @@ class MainActivity : AppCompatActivity() {
         if (str == "Start") {
             binding.reminderTime.visibility = View.VISIBLE
             if(alarmManager.canScheduleExactAlarms()){
-                        alarmManager.setExact(
-                            AlarmManager.RTC_WAKEUP,
-                            millisTime,
-                            pendingIntent
-                        )
-                        Toast.makeText(this, "Alarm set", Toast.LENGTH_SHORT).show()
+                alarmManager.setExact(
+                    AlarmManager.RTC_WAKEUP,
+                    millisTime,
+                    pendingIntent
+                )
+                Toast.makeText(this, "Alarm set", Toast.LENGTH_SHORT).show()
             }
         } else if (str == "Stop") {
             alarmManager.cancel(pendingIntent)
